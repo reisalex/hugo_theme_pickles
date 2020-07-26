@@ -2,9 +2,9 @@
 <ul class="c-links">
   {{ with ($.Param "mail") }}
   <li class="c-links__item">
-    <a href="{{ . }}" target="_blank">
+    <a href="mailto:{{ . }}" target="_blank">
       <svg viewBox="0 0 64 64" class="c-links__icon">
-        <title>mail</title>
+        <title>email</title>
         <use xlink:href="#icon-mail"></use>
       </svg>
     </a>
@@ -192,7 +192,7 @@
   {{ end }}
   {{ with ($.Param "orcid") }}
   <li class="c-links__item">
-    <a href="https://https://orcid.org/{{ . }}" target="_blank">
+    <a href="https://orcid.org/{{ . }}" target="_blank">
       <svg viewBox="0 0 64 64" class="c-links__icon">
         <title>orcid</title>
         <use xlink:href="#icon-orcid"></use>
